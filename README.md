@@ -17,7 +17,7 @@ Returns:
 
 `wcswidth` takes a *string* and outputs its total width:
 
-    wcswidth("*ウルヰ*") # returns 19 = 2 + 6
+    wcswidth("*ウルヰ*") # returns 8 = 2 + 6
 
 Returns -1 if any control characters are found.
 
