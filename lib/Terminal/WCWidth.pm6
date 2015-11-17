@@ -43,9 +43,18 @@ sub wcswidth($str) is export {
 =begin pod
 =title Terminal::WCWidth
 
-=head1 Synopsis
+=head1 Name
 A Perl 6 port of a Python module
 (L<https://github.com/jquast/wcwidth>)
+
+=head1 Synopsis
+
+    sub print-right-aligned($s) {
+      print " " x (80 - wcswidth($s));
+      say $s;
+    }
+    print-right-aligned("this is right-aligned");
+    print-right-aligned("another right-aligned string")
 
 =head1 Subroutines
 
