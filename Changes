@@ -1,4 +1,6 @@
 Revision history for Terminal::WCWidth
 
 {{$NEXT}}
+
+0.1.1  2024-08-07T16:58:59+02:00
     - Initial version in Raku Community Modules

@@ -47,8 +47,6 @@ my sub wcswidth($str) is export {
 
 =begin pod
 
-=title Terminal::WCWidth
-
 =head1 NAME
 
 Terminal::WCWidth - returns character width on a terminal
@@ -70,7 +68,7 @@ print-right-aligned("another right-aligned string")
 
 =head1 DESCRIPTION
 
-A Raku port of a Python module (L<https://github.com/jquast/wcwidth>)
+A Raku port of a L<Python module|https://github.com/jquast/wcwidth>.
 
 =head1 SUBROUTINES
 

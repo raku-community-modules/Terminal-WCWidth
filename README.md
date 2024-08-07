@@ -1,10 +1,5 @@
 [![Actions Status](https://github.com/raku-community-modules/Terminal-WCWidth/actions/workflows/linux.yml/badge.svg)](https://github.com/raku-community-modules/Terminal-WCWidth/actions) [![Actions Status](https://github.com/raku-community-modules/Terminal-WCWidth/actions/workflows/macos.yml/badge.svg)](https://github.com/raku-community-modules/Terminal-WCWidth/actions) [![Actions Status](https://github.com/raku-community-modules/Terminal-WCWidth/actions/workflows/windows.yml/badge.svg)](https://github.com/raku-community-modules/Terminal-WCWidth/actions)
 
-title
-=====
-
-Terminal::WCWidth
-
 NAME
 ====
 
@@ -27,7 +22,7 @@ print-right-aligned("another right-aligned string")
 DESCRIPTION
 ===========
 
-A Raku port of a Python module ([https://github.com/jquast/wcwidth](https://github.com/jquast/wcwidth))
+A Raku port of a [Python module](https://github.com/jquast/wcwidth).
 
 SUBROUTINES
 ===========
