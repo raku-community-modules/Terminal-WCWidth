@@ -2,7 +2,7 @@
 
 use HTTP::UserAgent;
 
-constant TARGET = 'lib/Terminal/WCWidth/Tables.pm6';
+constant TARGET = 'lib/Terminal/WCWidth/Tables.rakumod';
 
 my $ua = HTTP::UserAgent.new;
 
@@ -43,7 +43,7 @@ sub parse ( $haystack, $needle ) {
 
     die "Did not parse any values from $haystack" unless @values;
 
-    return ( $date, $source, @values.sort );
+    ( $date, $source, @values.sort )
 }
 
 sub make-table ( $path, $variable, $date, $source, @values ) {
@@ -90,3 +90,5 @@ sub MAIN () {
     work( 'extracted/DerivedGeneralCategory.txt', 'ZERO_WIDTH',     rx/ 'Me' || 'Mn' / );
     work(           'EastAsianWidth.txt',         'WIDE_EASTASIAN', rx/ 'W'  || 'F'  / );
 }
+
+# vim: expandtab shiftwidth=4

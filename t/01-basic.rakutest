@@ -1,8 +1,11 @@
 use Test;
-use lib 'lib';
 use Terminal::WCWidth;
 
-sub assert-length($str, @each, $phrase, $msg = "wcwidth test") {
+plan 12;
+
+sub assert-length(
+  $str, @each, $phrase, $msg = "wcwidth test"
+) is test-assertion {
   my @actual-each = $str.NFC.map(&wcwidth);
   my $actual-phrase = wcswidth($str);
   is @actual-each, @each,
@@ -44,4 +47,4 @@ assert-length("\x1B13\x1B28\x1B2E\x1B44",
   "Balinese kapal (ship) is ᬓᬨᬮ᭄ of length 4."
 );
 
-done-testing;
+# vim: expandtab shiftwidth=4
