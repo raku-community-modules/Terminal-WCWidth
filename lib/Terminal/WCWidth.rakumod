@@ -112,13 +112,13 @@ in turn is based on the C library by Markus Kuhn.
 
 =head1 AUTHORS
 
-=item Tae Lim Koo
+=item +merlan #flirora
 =item José Joaquín Atria
 =item Raku Community
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2015 - 2017 Tae Lim Koo
+Copyright 2015 - 2017 +merlan #flirora
 
 Copyright 2020, 2024 Raku Commuity
 
