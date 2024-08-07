@@ -67,7 +67,7 @@ Thanks to Jeff Quast (jquast), the author of the Python module, which in turn is
 AUTHORS
 =======
 
-  * Tae Lim Koo
+  * +merlan #flirora
 
   * José Joaquín Atria
 
@@ -76,7 +76,7 @@ AUTHORS
 COPYRIGHT AND LICENSE
 =====================
 
-Copyright 2015 - 2017 Tae Lim Koo
+Copyright 2015 - 2017 +merlan #flirora
 
 Copyright 2020, 2024 Raku Commuity
 
