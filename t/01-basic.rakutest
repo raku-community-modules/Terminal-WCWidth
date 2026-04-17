@@ -50,7 +50,7 @@ assert-length("\x1B13\x1B28\x1B2E\x1B44",
 # VS16 (U+FE0F) turns text characters into emoji presentation (width 2)
 assert-length("\x2747\xFE0F",
   (1, 0),
- re j 2,
+  2,
   "❇️ (U+2747 + VS16): is of length 2"
 );
 
