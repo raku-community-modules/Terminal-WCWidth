@@ -37,10 +37,17 @@ my sub wcwidth(Int:D $ucs) is export {
 
 my sub wcswidth($str) is export {
     my $res = 0;
+    my $prev-w = 0;
     for $str.NFC {
+        if $_ == 0xFE0F && $prev-w == 1 {
+            $res += 1;
+            $prev-w = 0;
+            next;
+        }
         my $w = wcwidth($_);
         return -1 if $w < 0;
         $res += $w;
+        $prev-w = $w;
     }
     $res
 }

@@ -1,7 +1,7 @@
 use Test;
 use Terminal::WCWidth;
 
-plan 12;
+plan 16;
 
 sub assert-length(
   $str, @each, $phrase, $msg = "wcwidth test"
@@ -45,6 +45,19 @@ assert-length("\x1B13\x1B28\x1B2E\x1B44",
   (1, 1, 1, 1),
   4,
   "Balinese kapal (ship) is ᬓᬨᬮ᭄ of length 4."
+);
+
+# VS16 (U+FE0F) turns text characters into emoji presentation (width 2)
+assert-length("\x2747\xFE0F",
+  (1, 0),
+  2,
+  "❇️ (U+2747 + VS16): is of length 2"
+);
+
+assert-length("\x2603\xFE0F",
+  (1, 0),
+  2,
+  "☃️ (U+2603 + VS16): is of length 2"
 );
 
 # vim: expandtab shiftwidth=4
