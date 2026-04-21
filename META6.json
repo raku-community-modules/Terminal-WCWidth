@@ -12,14 +12,19 @@
   "description": "returns character width on a terminal",
   "license": "MIT",
   "name": "Terminal::WCWidth",
-  "perl": "6.d",
   "provides": {
     "Terminal::WCWidth": "lib/Terminal/WCWidth.rakumod",
     "Terminal::WCWidth::Tables": "lib/Terminal/WCWidth/Tables.rakumod"
   },
+  "raku": "6.d",
   "resources": [
   ],
   "source-url": "https://github.com/raku-community-modules/Terminal-WCWidth.git",
+  "support": {
+    "bugtracker": "https://github.com/raku-community-modules/Terminal-WCWidth/issues",
+    "email": "community@raku.org",
+    "source": "https://github.com/raku-community-modules/Terminal-WCWidth.git"
+  },
   "tags": [
     "WIDTH",
     "UNICODE",
@@ -27,5 +32,5 @@
   ],
   "test-depends": [
   ],
-  "version": "0.1.4"
+  "version": "0.1.5"
 }

@@ -2,5 +2,10 @@ Revision history for Terminal::WCWidth
 
 {{$NEXT}}
 
+0.1.5  2026-04-21T21:43:27+02:00
+    - Add support for VS-16 flag, bduggan++
+    - Modernize META
+    - Update copyright year
+
 0.1.4  2024-08-07T22:20:48+02:00
     - Initial version in Raku Community Modules
